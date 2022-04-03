@@ -16,7 +16,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+     
     <div class="container">
+        <div class="btn-mobile">
+            <div class="hamburguer"></div>
+            <div><span>Fechar</span></div>
+        </div>
+        <!-- == Início do header == -->
         <header>
             <div class="img-wrapper"> 
                 <img src="{% static 'img/bg.jpg'%}" alt=""> <!-- Minha imagem de fundo -->
@@ -27,7 +33,28 @@
                 <button>Saiba mais</button>
             </div>
         </header>
+        <!-- == fim do header == -->
+
+        <!-- == Início do sidebar == -->
+        <div class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Contatos</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <a class="cls-i" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="cls-i" href="#"><i class="fab fa-github-alt"></i></a>
+                <a class="cls-i" href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
     </div>
+    <!-- == fim do sidebar == -->
 
 
     <script src="{% static 'js/dirceu.js'%}"></script>

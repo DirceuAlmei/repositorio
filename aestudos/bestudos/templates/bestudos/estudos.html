@@ -120,53 +120,78 @@
         </section>
 
         <!-- == início seção projetos == -->
-        
-        
+        <section class="sessao-projetos">
+            <div class="sessao-header">
+                <h1>Projetos</h1>
+            </div>
+    
+            <div class="projetos">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="{% static 'img/proj1.jpg'%}" alt="">
+                    </div>
+                    <div class="car-info">
+                        <h2>ToDo List</h2>
+                        <h3>Javascript</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima iste facere reiciendis aut? Impedit cupiditate praesentium suscipit sint est, odit deleniti at voluptatem corrupti culpa tempora asperiores aut placeat!</p>
+                        <button>Saiba mais</button>cd
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="{% static 'img/proj2.jpg'%}" alt="">
+                    </div>
+                    <div class="car-info">
+                        <h2>Css e html5</h2>
+                        <h3>Javascript</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima iste facere reiciendis aut? Impedit cupiditate praesentium suscipit sint est, odit deleniti at voluptatem corrupti culpa tempora asperiores aut placeat!</p>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="{% static 'img/proj3.jpg'%}" alt="">
+                    </div>
+                    <div class="car-info">
+                        <h2>ToDo List</h2>
+                        <h3>Javascript</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima iste facere reiciendis aut? Impedit cupiditate praesentium suscipit sint est, odit deleniti at voluptatem corrupti culpa tempora asperiores aut placeat!</p>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- == fim seção projetos == -->
+        
+        <!-- == fim do sidebar == -->
+
+        <!-- === seção de formulários === -->
+        <section class="sessao-contato">
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>   
+                <div class="contato-right">
+                    <h1>Contato</h1>  
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit">Envie sua mensagem</button>
+                    </form>
+                </div>  
+            </div>
+        </section>
 
     </div>
-    <!-- == fim do sidebar == -->
-    <section class="sessao-projetos">
-        <div class="sessao-header">
-            <h1>Projetos</h1>
-        </div>
-
-        <div class="projetos">
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="{% static 'img/proj1.jpg'%}" alt="">
-                </div>
-                <div class="car-info">
-                    <h2>ToDo List</h2>
-                    <h3>Javascript</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima iste facere reiciendis aut? Impedit cupiditate praesentium suscipit sint est, odit deleniti at voluptatem corrupti culpa tempora asperiores aut placeat!</p>
-                    <button>Saiba mais</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="{% static 'img/proj2.jpg'%}" alt="">
-                </div>
-                <div class="car-info">
-                    <h2>Css e html5</h2>
-                    <h3>Javascript</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima iste facere reiciendis aut? Impedit cupiditate praesentium suscipit sint est, odit deleniti at voluptatem corrupti culpa tempora asperiores aut placeat!</p>
-                    <button>Saiba mais</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="{% static 'img/proj3.jpg'%}" alt="">
-                </div>
-                <div class="car-info">
-                    <h2>ToDo List</h2>
-                    <h3>Javascript</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima iste facere reiciendis aut? Impedit cupiditate praesentium suscipit sint est, odit deleniti at voluptatem corrupti culpa tempora asperiores aut placeat!</p>
-                    <button>Saiba mais</button>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
 
     <script src="{% static 'js/dirceu.js'%}"></script>

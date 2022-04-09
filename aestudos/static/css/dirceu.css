@@ -12,6 +12,9 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -223,6 +226,9 @@ header{
 .sidebar.ativar{
     right: 0;
 }
+.sidebar.ativar #link-topo{
+    visibility: hidden;
+}
 
 /* == configuração do menu == */
 .menu{
@@ -395,15 +401,17 @@ header{
 }
 .car-info{
     position: relative;
-    top: -260px;
     padding: 2rem;
     text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.4);
-    opacity: 0;
+    opacity: 1;
     bottom: 20rem;
     visibility: hidden;
     transition: all .5s ease-in-out;
     animation: cartao 2s 0.9s forwards;
 }
+/* .car-info:hover{
+    top: 2rem;
+} */
 
 /* @keyframes cartao { animação do h1, p e botão */
     /* 0%{
@@ -534,11 +542,115 @@ header{
 .field:focus{
     border-bottom: 1px solid red;
 }
-form button{
+.botao{
     padding: 10px 2px;
     background: #6a3093;
     border-radius: 5px;
     margin-bottom: 15px;
     color: #f7f4fa;
     width: 100%;
+}
+
+/* == seção orçamento == */
+.sessao-orcamento{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg-orcamento.jpg); 
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orcamento-wrapper{
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff99;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+.sessao-orcamento h1{
+    position: relative;
+    top: -5rem;
+    left: 0rem;
+    background: #6a3093;  /*fallback for old browsers*/
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0.3rem;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sessao-orcamento form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.sessao-orcamento label{
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.sessao-orcamento input[type="number"]{
+    font-family: var(--font-primary);
+    width: 4rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 2px 0 0 16px;
+}
+.botao-orcamento{
+    background-color: red;
+    grid-column: 2;
+}
+
+/* == footer == */
+footer{
+    width: 100%;
+    height: 7rem;
+    background: #2655e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    position: absolute;
+    bottom: -2800px;
+}
+.footer-content{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content p{
+    font-family: var(--font-primary);
+    color: rgb(22, 1, 1);
+    font-size: 1.2rem;
+}
+.social-list a{
+    margin:  0 2rem;
+    color: #000;
+    font-size: 1.2rem;
+}
+.social-list ul{
+    display: flex;
+}
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    background: #636363;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
 }

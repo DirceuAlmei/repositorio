@@ -23,7 +23,7 @@
             <div><span>Fechar</span></div>
         </div>
         <!-- == Início do header == -->
-        <header>
+        <header id="home">
             <div class="img-wrapper"> 
                 <img src="{% static 'img/bg.jpg'%}" alt=""> <!-- Minha imagem de fundo -->
             </div>
@@ -39,11 +39,11 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contatos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contatos" class="menu-link">Contatos</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
 
@@ -54,7 +54,7 @@
             </div>
         </aside>
 
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id="conhecimentos">
             <div class="sessao-header">
                 <h1>Meus conhecimentos</h1>
             </div>
@@ -120,7 +120,7 @@
         </section>
 
         <!-- == início seção projetos == -->
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="projetos">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
@@ -134,7 +134,7 @@
                         <h2>ToDo List</h2>
                         <h3>Javascript</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima iste facere reiciendis aut? Impedit cupiditate praesentium suscipit sint est, odit deleniti at voluptatem corrupti culpa tempora asperiores aut placeat!</p>
-                        <button>Saiba mais</button>cd
+                        <button class="botao">Saiba mais</button>cd
                     </div>
                 </div>
                 <div class="card">
@@ -145,7 +145,7 @@
                         <h2>Css e html5</h2>
                         <h3>Javascript</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima iste facere reiciendis aut? Impedit cupiditate praesentium suscipit sint est, odit deleniti at voluptatem corrupti culpa tempora asperiores aut placeat!</p>
-                        <button>Saiba mais</button>
+                        <button class="botao">Saiba mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -156,7 +156,7 @@
                         <h2>ToDo List</h2>
                         <h3>Javascript</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima iste facere reiciendis aut? Impedit cupiditate praesentium suscipit sint est, odit deleniti at voluptatem corrupti culpa tempora asperiores aut placeat!</p>
-                        <button>Saiba mais</button>
+                        <button class="botao">Saiba mais</button>
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@
         <!-- == fim do sidebar == -->
 
         <!-- === seção de formulários === -->
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="contatos">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>   
                 <div class="contato-right">
@@ -184,15 +184,68 @@
                             <textarea class="field" id="mensagem"></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
-                        <button type="submit">Envie sua mensagem</button>
+                        <button class="botao" type="submit">Envie sua mensagem</button>
                     </form>
                 </div>  
             </div>
         </section>
 
+        <!-- == section de orçamento == -->
+        <section class="sessao-orcamento" id="orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form action="">
+                    <label for="quantidade">Quantidade de páginas.</label>
+                    <input type="number" min="1" name="qde" id="qtde">
+                    <label for="js">Preciso de um script Javascript</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Não preciso de um layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="pra" id="prazo">
+                    <label id="preco">R$ 0,00</label>
+                    <button class="botao botao-orcamento" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        
+
+        <!-- == seção footer == -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer">
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2022 - DIRCEU - Todos os direitos reservados.
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <a href="#home" id="link-topo">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </footer>
+
     </div>
    
-
+    <script>
+        
+    </script>
 
     <script src="{% static 'js/dirceu.js'%}"></script>
 </body>

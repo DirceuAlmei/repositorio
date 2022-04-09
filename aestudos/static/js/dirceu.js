@@ -8,9 +8,16 @@ btnMobile.addEventListener("click", function(){
     document.querySelector(".hamburguer").classList.toggle("open");
 })
 
-var dirceu = document.getElementById('dirceu');
-function dirceuaguiar(){
-    var ilma = document.getElementById('iiiii')
-    ilma.classList.toggle('click')
+document.querySelector("#qtde").addEventListener("change", atualizarPreco);
+function atualizarPreco(){
+    const qtde = document.querySelector("#qtde").value;
+    let preco = qtde * 100;
+        document.getElementById("#preco").innerHTML = "R$  " + preco
 }
-dirceu.addEventListener('click', dirceuaguiar)
+
+// var dirceu = document.getElementById('dirceu');
+// function dirceuaguiar(){
+//     var ilma = document.getElementById('iiiii')
+//     ilma.classList.toggle('click')
+// }
+// dirceu.addEventListener('click', dirceuaguiar)

@@ -4,3 +4,6 @@ from .import views
 # Create your views here.
 def EstudosView(request):
     return render(request, 'bestudos/estudos.html')
+
+def ProjetoView(request):
+    return render(request, 'bestudos/projetocordel.html')

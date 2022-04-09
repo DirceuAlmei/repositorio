@@ -12,7 +12,7 @@ document.querySelector("#qtde").addEventListener("change", atualizarPreco);
 function atualizarPreco(){
     const qtde = document.querySelector("#qtde").value;
     let preco = qtde * 100;
-        document.getElementById("#preco").innerHTML = "R$  " + preco
+        document.getElementById("#preco").innerHTML = `R$  ${preco}`
 }
 
 // var dirceu = document.getElementById('dirceu');
